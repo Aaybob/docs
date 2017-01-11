@@ -44,15 +44,19 @@ difference to the OpenAPS app, so either model is suitable choice.
 
 ## Raspberry Pi 3 Model B  
 
-The Raspberry Pi 3 has higher specs and built-in WiFi and Bluetooth, so it draws
-more power. As a consequence, it has a shorter battery life than the
-Raspberry Pi 2. So when selecting portable battery packs bear this in mind.
+The Raspberry Pi 3 draws more power and has built-in WiFi and Bluetooth. With a larger power supply it will increase the CareLink range. Select a power supply capable of 5.25Vdc and 2.5Amps. With RPi3 for mobile operation you may want a larger battery.
 
 [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
 
 ## CareLink USB Stick
 
-The easiest device for uploading pump data and interfacing OpenAPS is the CareLink USB stick for the RPi. Due to the short range of communication between the CareLink stick and the Medtronic pumps, some users set up multiple sticks in different locations to maximize the chances of successful transmissions. CareLink is not the modern communication device sold by Medtronic. CareLink has been replaced by a newer system but OpenAPS uses the older original communication device, CareLink. Some places to purchase: [Medtronic](https://medtronicdiabetes.secure.force.com/store/remotes-parts/carelink-usb-device/usb-wireless-upload-device) or [American Diabetes Wholesale](http://www.adwdiabetes.com/product/minimed-carelink-usb-upload_1164.htm).
+Currently, the primary supported device (in the OpenAPS documentation) for
+uploading pump data and interfacing on the #OpenAPS is the CareLink USB stick for the Pi.
+We recommend you purchase at least two sticks because if one breaks, acquiring
+another stick will take time and will delay development. Additionally, due to
+the short range of communication between the CareLink stick and the Medtronic
+pumps, some users set up multiple sticks in different locations to maximize the
+chances of successful transmissions. Some places to purchase: [Medtronic](https://medtronicdiabetes.secure.force.com/store/remotes-parts/carelink-usb-device/usb-wireless-upload-device) or [American Diabetes Wholesale](http://www.adwdiabetes.com/product/minimed-carelink-usb-upload_1164.htm).
 
 A limitation of the Carelink USB stick is the short range of radio
 communications with the Medtronic pump. The radio signals are transmitted from
